@@ -28,3 +28,17 @@ document.getElementById("mensaje").innerText = "Completa todos los campos"
 }
 
 })
+
+let formulario = document.getElementById("formPropuesta");
+let idea = document.getElementById("idea");
+let ultimas = document.querySelector(".ultimasPropuestas div");
+
+formulario.onsubmit = function(e) {
+
+e.preventDefault();
+
+ultimas.innerHTML += "<p>" + idea.value + "</p>";
+
+idea.value = "";
+
+}
