@@ -1,6 +1,6 @@
 body{
-font-family: Arial, sans-serif
-margin:0;
+font-family: Arial, sans-serif;
+margin: 0;
 background:#f4f4f4;
 }
 
@@ -14,7 +14,7 @@ padding:15px;
 
 nav a{
 color:white;
-margin-left:15px
+margin-left:15px;
 text-decoration:none;
 }
 
@@ -41,6 +41,9 @@ background:#e68900;
 width:400px;
 margin:auto;
 margin-top:40px;
+
+}
+.propuesta form{
 display:flex;
 flex-direction:column;
 }
