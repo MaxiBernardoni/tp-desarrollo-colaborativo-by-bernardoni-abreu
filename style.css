@@ -1,46 +1,58 @@
+@font-face {
+  font-family: "cornella";
+  src: url("cornella.otf");
+}
+
 body{
-font-family: Arial, sans-serif
-margin:0;
+font-family: "cornella", Arial, sans-serif;
+margin: 0;
 background:#f4f4f4;
 }
 
 .navbar{
 display:flex;
 justify-content:space-between;
-background:#003366;
+background:#816531;
 color:white;
 padding:15px;
 }
 
 nav a{
 color:white;
-margin-left:15px
+margin-left:15px;
 text-decoration:none;
 }
 
 .hero{
 text-align:center;
 padding:80px;
-background:linear-gradient(135deg,#2193b0,#6dd5ed);
+background:linear-gradient(135deg,#ccc0ae,#c2aa67);
 color:white;
 }
 
 button{
-background:#ff9800;
+background:#3f301b;
 border:none;
 padding:12px 20px;
 color:white;
 cursor:pointer;
 }
 
-button hover{
-background:#e68900;
+button:hover{
+background:#634d2f;
+box-shadow: 0 0 5px rgba(0,0,0,0.2);
+margin-left: 2px;
+margin-top: 2px;
+transition: all 0.2s ease;
 }
 
 .propuesta{
-width:400px;
+width:30%;
 margin:auto;
 margin-top:40px;
+
+}
+.propuesta form{
 display:flex;
 flex-direction:column;
 }
@@ -54,6 +66,41 @@ footer{
 text-align:center;
 margin-top:50px;
 padding:20px;
-background:#003366;
+background:#816531;
 color:white;
+}
+
+@media (max-width: 768px) {
+
+.navbar{
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+display:block;
+margin:5px 0;
+}
+
+.hero{
+padding:40px 20px;
+}
+
+.propuesta{
+width:90%;
+}
+
+h1{
+font-size:24px;
+}
+
+h2{
+font-size:20px;
+}
+
 }
